@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Effect</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .cursor::after {
+            content: "|";
+            display: inline-block;
+            animation: blink 0.8s infinite;
+        }
+        @keyframes blink {
+            50% { opacity: 0; }
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white flex justify-center items-center h-screen">
+    <h2 class="text-5xl font-extrabold">
+        Hi, I'm <span class="text-blue-500 cursor" id="typing"></span>
+    </h2>
+
+    <script>
+        const text = "Adarsh B";
+        let index = 0;
+        function typeEffect() {
+            if (index < text.length) {
+                document.getElementById("typing").innerHTML += text.charAt(index);
+                index++;
+                setTimeout(typeEffect, 150);
+            }
+        }
+        window.onload = typeEffect;
+    </script>
+</body>
+</html>
