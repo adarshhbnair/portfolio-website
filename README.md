@@ -28,11 +28,3 @@ Welcome to my personal portfolio website! This project showcases my skills, proj
 Check out the live version of my portfolio: [Adarsh B | Portfolio](https://adarshhbnair.github.io/portfolio)
 
 ---
-
-## How to Run Locally
-
-If you'd like to run this project locally, follow these steps:
-
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/adarshhbnair/portfolio.git
