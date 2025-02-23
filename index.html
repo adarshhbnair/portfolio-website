@@ -4,63 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adarsh B | Portfolio</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="favicon-32x32.png">
-    </head>
-<body class="bg-gray-900 text-white">
+</head>
+<body>
     <!-- Navbar -->
-    <nav class="p-5 bg-gray-800 flex justify-between items-center shadow-lg sticky top-0 z-50">
-        <h1 class="text-3xl font-bold text-blue-400">Adarsh B</h1>
-        <ul class="flex space-x-6 text-lg">
-            <li><a href="#about" class="hover:text-blue-400 transition">About</a></li>
-            <li><a href="#projects" class="hover:text-blue-400 transition">Projects</a></li>
-            <li><a href="#contact" class="hover:text-blue-400 transition">Contact</a></li>
+    <nav>
+        <h1>Adarsh B</h1>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
-    
+
     <!-- Hero Section -->
-    <section class="h-screen flex flex-col justify-center items-center text-center">
-        <h2 class="text-5xl font-extrabold">Hi, I'm <span class="text-blue-500">Adarsh B</span></h2>
-        <p class="text-gray-300 mt-3 text-lg">Aspiring Web Developer | MERN Stack Enthusiast</p>
-        <a href="#contact" class="mt-5 px-8 py-4 bg-blue-500 rounded-full text-xl font-semibold hover:bg-blue-600 transition">Hire Me</a>
+    <section class="hero">
+        <h2>Hi, I'm <span id="typing"></span></h2>
+        <p>Aspiring Web Developer | MERN Stack Enthusiast</p>
+        <a href="#about">Hire Me</a>
     </section>
-    
+
     <!-- About Section -->
-    <section id="about" class="p-10 bg-gray-800 text-center">
-        <h2 class="text-4xl font-bold">About Me</h2>
-        <p class="text-gray-300 mt-4 max-w-3xl mx-auto">I'm an Electronics and Communication Engineering student, Passionate about Full-Stack Web Development. Currently exploring the MERN stack to build scalable applications.</p>
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>I'm an Electronics and Communication Engineering student, Passionate about Full-Stack Web Development. Currently exploring the MERN stack to build scalable applications.</p>
+        <p>Tech Stack: Java, C++, C, Python, Matlab, HTML, CSS, JavaScript. </p>
+        <p>Interests: Web Development, DSA, Data Science, Machine Learning</p>
     </section>
-    
+
     <!-- Projects Section -->
-    <section id="projects" class="p-16">
-        <h2 class="text-4xl font-bold text-center">Projects</h2>
-        <div class="mt-10 grid grid-cols-1 md:grid-cols-1 gap-6">
-            <div class="p-6 bg-gray-800 rounded-lg shadow-lg text-center">
-                <h3 class="text-xl font-semibold">Weather App</h3>
-                <p class="text-gray-400 mt-2">A weather app using Fetch API to display real-time weather data.</p>
-                <a href="https://github.com/adarshhbnair/weather-app" target="_blank" class="mt-4 inline-block px-4 py-2 bg-blue-500 rounded-full hover:bg-blue-600 transition">View Project</a>
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <h3>Weather App</h3>
+                <p>A weather app using Fetch API to display real-time weather data.</p>
+                <p>Tech Stack: HTML, CSS, JavaScript.</p>
+                <a href="https://github.com/adarshhbnair/weather-app" target="_blank">View Project</a>
+            </div>
+            <!--Add more projects here with the class="project-card"-->
+            <div class="project-card">
+                <h3>To-Do List App</h3>
+                <p>A simple To-do list where users can add, edit, and delete tasks</p>
+                <p>Tech Stack: HTML, CSS, JavaScript & React</p>
+                <p>Skills Practiced: DOM manipulation, state management, and CRUD operations.</p>
+                <a href="#" target="_blank">View Project</a>
             </div>
         </div>
     </section>
-    
+
     <!-- Contact Section -->
-    <section id="contact" class="p-10 bg-gray-800 text-center">
-        <h2 class="text-4xl font-bold">Contact Me</h2>
-        <p class="text-gray-300 mt-3 text-lg">Email: <a href="mailto:adarshhbnair@gmail.com" class="text-blue-400 hover:underline">adarshhbnair@gmail.com</a></p>
-        <p class="text-gray-300 mt-2 text-lg">Phone: <span class="text-blue-400">+91 9526796390</span></p>
-        <div class="mt-4 space-x-4">
-            <a href="https://www.linkedin.com/in/adarsh-b-0b8012270/" target="_blank" class="text-blue-400 text-xl hover:underline">LinkedIn</a>
-            <a href="https://github.com/adarshhbnair" target="_blank" class="text-blue-400 text-xl hover:underline">GitHub</a>
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:adarshhbnair@gmail.com">adarshhbnair@gmail.com</a></p>
+        <p>Phone: <span>+91 9526796390</span></p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/adarsh-b-0b8012270/" target="_blank">LinkedIn</a>
+            <a href="https://github.com/adarshhbnair" target="_blank">GitHub</a>
         </div>
     </section>
-    <footer class="p-4 bg-gray-800 text-center text-gray-400">
-        <p>&copy; 2025 Adarsh Balakrishnan</p>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; <span id="year"></span> Adarsh Balakrishnan</p>
     </footer>
-    <style>
-        html {
-            scroll-behavior: smooth;
-        }
-    </style>
-    
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>
