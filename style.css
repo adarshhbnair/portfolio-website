@@ -1,0 +1,222 @@
+/* General Styles */
+body {
+    background-color: #000000; /* bg-gray-900 */
+    color: #ffffff; /* text-white */
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar Styles */
+nav {
+    background-color: #000000; /* bg-gray-800 */
+    padding: 0.50rem; /* p-5 */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px -1px rgba(102, 95, 188, 0.912), 0 5px 8px -1px rgba(255, 255, 255, 0.845); /* shadow-lg */
+    position: sticky;
+    top: 0;
+    z-index: 50;
+}
+
+nav h1 {
+    font-size: 1.875rem; /* text-3xl */
+    font-weight: 700; /* font-bold */
+    color: #60a5fa; /* text-blue-400 */
+}
+
+nav ul {
+    display: flex;
+    gap: 1.5rem; /* space-x-6 */
+    font-size: 1.125rem; /* text-lg */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease; /* transition */
+}
+
+nav ul li a:hover {
+    color: #60a5fa; /* hover:text-blue-400 */
+}
+
+/* Hero Section Styles */
+.hero {
+    height: 100vh; /* h-screen */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 3rem; /* text-5xl */
+    font-weight: 800; /* font-extrabold */
+}
+
+.hero h2 span {
+    color: #3b82f6; /* text-blue-500 */
+}
+
+.hero p {
+    color: #d1d5db; /* text-gray-300 */
+    margin-top: 0.75rem; /* mt-3 */
+    font-size: 1.125rem; /* text-lg */
+}
+
+.hero a {
+    background-color: #000000; /* bg-blue-500 */
+    color: #ffffff;
+    padding: 1rem 2rem; /* px-8 py-4 */
+    border-radius: 9999px; /* rounded-full */
+    font-size: 1.25rem; /* text-xl */
+    font-weight: 600; /* font-semibold */
+    text-decoration: none;
+    margin-top: 1.25rem; /* mt-5 */
+    transition: background-color 0.3s ease; /* transition */
+}
+
+.hero a:hover {
+    background-color: #2563eb; /* hover:bg-blue-600 */
+}
+
+/* About Section Styles */
+.about {
+    background-color: #000000; /* bg-gray-800 */
+    padding: 2.0rem; /* p-10 */
+    text-align: center;
+}
+.about:hover {
+    color: #60a5fa; /* hover:text-blue-400 */
+}
+.about h2 {
+    font-size: 2.25rem; /* text-4xl */
+    font-weight: 700; /* font-bold */
+}
+
+.about p {
+    color: #d1d5db; /* text-gray-300 */
+    margin-top: 1rem; /* mt-4 */
+    max-width: 48rem; /* max-w-3xl */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Projects Section Styles */
+.projects {
+    padding: 4rem; /* p-16 */
+}
+
+.projects h2 {
+    font-size: 2.25rem; /* text-4xl */
+    font-weight: 700; /* font-bold */
+    text-align: center;
+}
+
+.projects .project-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* grid-cols-1 */
+    gap: 1.5rem; /* gap-6 */
+    margin-top: 2.5rem; /* mt-10 */
+}
+
+.projects .project-card {
+    background-color: #000000; /* bg-gray-800 */
+    padding: 1.5rem; /* p-6 */
+    border-radius: 0.5rem; /* rounded-lg */
+    text-align: center; 
+}
+.projects .project-card:hover{
+    box-shadow: 0 4px 6px -1px rgba(226, 8, 8, 0.888), 0 2px 4px -1px rgba(0, 0, 0, 0.06); /* shadow-lg */
+}
+
+.projects .project-card h3 {
+    font-size: 1.25rem; /* text-xl */
+    font-weight: 600; /* font-semibold */
+}
+
+.projects .project-card p {
+    color: #9ca3af; /* text-gray-400 */
+    margin-top: 0.5rem; /* mt-2 */
+}
+
+.projects .project-card a {
+    background-color: #000000; /* bg-blue-500 */
+    color: #ffffff;
+    padding: 0.5rem 1rem; /* px-4 py-2 */
+    border-radius: 9999px; /* rounded-full */
+    text-decoration: none;
+    margin-top: 1rem; /* mt-4 */
+    display: inline-block;
+    transition: background-color 0.3s ease; /* transition */
+}
+
+.projects .project-card a:hover {
+    background-color: #2563eb; /* hover:bg-blue-600 */
+}
+
+/* Contact Section Styles */
+.contact {
+    background-color: #000000; /* bg-gray-800 */
+    padding: 2.5rem; /* p-10 */
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2.25rem; /* text-4xl */
+    font-weight: 700; /* font-bold */
+}
+
+.contact p {
+    color: #d1d5db; /* text-gray-300 */
+    margin-top: 0.75rem; /* mt-3 */
+    font-size: 1.125rem; /* text-lg */
+}
+
+.contact a {
+    color: #60a5fa; /* text-blue-400 */
+    text-decoration: none;
+    transition: text-decoration 0.3s ease; /* transition */
+}
+
+.contact a:hover {
+    text-decoration: underline; /* hover:underline */
+}
+
+.contact .social-links {
+    margin-top: 1rem; /* mt-4 */
+    display: flex;
+    justify-content: center;
+    gap: 1rem; /* space-x-4 */
+}
+
+.contact .social-links a {
+    color: #60a5fa; /* text-blue-400 */
+    font-size: 1.25rem; /* text-xl */
+    text-decoration: none;
+    transition: text-decoration 0.3s ease; /* transition */
+}
+
+.contact .social-links a:hover {
+    text-decoration: underline; /* hover:underline */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #000000; /* bg-gray-800 */
+    padding: 1rem; /* p-4 */
+    text-align: center;
+    color: #9ca3af; /* text-gray-400 */
+}
+/* Add padding to sections to account for the sticky navbar */
+#about,
+#projects,
+#contact {
+    padding-top: 80px; /* Adjust this value based on your navbar height */
+}
