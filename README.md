@@ -6,7 +6,7 @@ Welcome to my personal portfolio website! This project showcases my skills, proj
 
 ## Features
 
-- **Responsive Design**: The website is fully responsive and works seamlessly on all devices (desktop, tablet, and mobile).
+- **Responsive Design**: The Website is fully responsive and works seamlessly on all devices (desktop, tablet, and mobile).
 - **Smooth Scrolling**: Navigate between sections with smooth scrolling for a better user experience.
 - **Project Showcase**: Highlight my projects with links to their GitHub repositories or live demos.
 - **Interactive Project Cards**: Clicking the "View Project" link highlights the project card with a color effect.
