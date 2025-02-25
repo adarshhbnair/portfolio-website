@@ -24,12 +24,6 @@ Welcome to my personal portfolio website! This project showcases my skills, proj
 
 ---
 
-## Live Demo
-
-Check out the live version of my portfolio: [Adarsh B | Portfolio](https://adarshhbnair.github.io/portfolio)
-
----
-
 ## Project Structure
 
 The project consists of the following files:
